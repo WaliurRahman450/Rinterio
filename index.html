@@ -45,49 +45,53 @@
 <body class="fontFamily">
     <header>
         <div class="navbar bg-base-100 justify-between md:container mx-auto mt-7">
-                <div>
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
+                   
+                    <div>
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-arrowColor rounded-full p-2.5"></i>
+                            <a class="btn btn-ghost text-4xl font-extrabold">Rinterio</a>
                     </div>
-                    <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Home</a></li>
-                    <li><a>Service</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+               
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="font-extrabold text-base"><a>Home</a></li>
+                        <li class="text-base text-gray-400"><a>Service</a></li>
+                        <li class="text-base text-gray-400"><a>Portfolio</a></li>
+                        <li class="text-base text-gray-400"><a>Blogs</a></li>
+                        <li class="text-base text-gray-400"><a>Contact Us</a></li>
                     </ul>
                 </div>
-                
-                <i class="fa-solid fa-arrow-right -rotate-45 bg-arrowColor rounded-full p-2.5"></i>
-                <a class="btn btn-ghost text-4xl font-extrabold">Rinterio</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li class="font-extrabold text-base"><a>Home</a></li>
-                    <li class="text-base text-gray-400"><a>Service</a></li>
-                    <li class="text-base text-gray-400"><a>Portfolio</a></li>
-                    <li class="text-base text-gray-400"><a>Blogs</a></li>
-                    <li class="text-base text-gray-400"><a>Contact Us</a></li>
-                </ul>
-                </div>
                 <div>
-                    <i class="fa-solid fa-magnifying-glass gap-1 p-5 rounded-full"></i>
-                    <i class="fa-solid fa-cart-shopping gap-1 p-5 rounded-full"></i>
-                <a class="btn font-extrabold text-xl bg-arrowColor rounded-[32px]">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black  text-white rounded-full p-2.5"></i> </a>
+                    <i class="fa-solid fa-magnifying-glass gap-1 p-5 rounded-full hidden"></i>
+                    <i class="fa-solid fa-cart-shopping gap-1 p-5 rounded-full hidden"></i>
+                <a class="btn font-extrabold text-xl bg-arrowColor rounded-[32px] hidden">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black  text-white rounded-full p-2.5"></i> </a>
                 </div>
         </div>
 
@@ -226,15 +230,15 @@
                 <h2 class="font-bold text-4xl mb-5">Our Latest Portfolio</h2>
                 <p class="font-medium text-base">The barn house captivates with its blend of rustic charm and modern sophistication,  <br> featuring weathered wood, sleek metal accents.</p>
             </div>
-            <div class="grid grid-cols-3 gap-6 mx-28 ">
+            <div class="grid grid-cols-12 gap-6 mx-28 ">
                 <!-- 1st -->
-                <div class="card card-side bg-base-100 shadow-xl col-span-2 p-6 w-[90%]">
+                <div class="card card-side bg-base-100 shadow-xl col-span-8 p-6 ">
                     <figure>
                       <img
                         src="./assets/img1.png"
                         alt="Movie" />
                     </figure>
-                    <div class="card-body w-0.5">
+                    <div class="card-body">
                       <h2 class="card-title">Commercial</h2>
                       <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                     </div>
@@ -242,33 +246,33 @@
 
                   
                    <!-- 2nd -->
-                    <div>
-                        <img src="./assets/img2.png" alt="" class="flex items-center">
+                    <div class="col-span-4 p-6">
+                        <img src="./assets/img2.png" alt="" class="flex items-center ">
                     </div>
 
 
                      <!-- 3rd -->
-                     <div class="col-span-1">
-                        <img src="./assets/img3.png" alt="" class="">
+                     <div class="col-span-3 p-6 ">
+                        <img src="./assets/img3.png" alt="">
                      </div>
 
 
                     <!-- 4th -->
-                    <div class="card card-side bg-base-100 shadow-xl p-6 ">
+                    <div class="card card-side bg-base-100 shadow-xl p-6 col-span-6">
                         <figure>
                           <img
                             src="./assets/img4.png"
-                            alt="Movie" class=""/>
+                            alt="Movie"/>
                         </figure>
-                        <div class="card-body w-[100%]">
+                        <div class="card-body">
                           <h2 class="card-title">Commercial</h2>
                           <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
                         </div>
                       </div>
 
                       <!-- 5th -->
-                      <div>
-                        <img src="./assets/img5.png" alt="" class="w-[70%]">
+                      <div class="col-span-3 p-6">
+                        <img src="./assets/img5.png" alt="" >
                       </div>
                    
 
@@ -364,10 +368,10 @@
 
          
     </main>
-        <footer class="footer footer-center bg-base-200 text-base-content rounded p-10 bg-black text-white pt-28">
+        <footer class="footer footer-center bg-base-200 text-base-content rounded p-10 bg-black text-white pt-20">
             <div>
-                <i class="fa-solid fa-arrow-right -rotate-45 bg-arrowColor rounded-full p-2.5 text-black"></i>
-                <a class="btn btn-ghost text-4xl font-extrabold">Rinterio</a>
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-arrowColor rounded-full p-2.5 text-black "></i>
+                <a class="btn btn-ghost text-4xl font-extrabold ">Rinterio</a>
                 <p class="font-medium text-base text-[#737373] mt-5">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
             </div>
             <nav class="grid grid-flow-col gap-4 font-medium text-base space-x-32 mt-5 mb-5">
